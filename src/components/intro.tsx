@@ -6,10 +6,16 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { HiDownload } from "react-icons/hi";
 import { FaArrowRight, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", {
+    amount: 0.75,
+  });
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
