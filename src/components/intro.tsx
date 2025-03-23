@@ -5,10 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { HiDownload } from "react-icons/hi";
-import { FaArrowRight, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
+import { FaArrowRight, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { changeActiveSection, changeTimeOfLastClick } =
+    useActiveSectionContext();
   const { ref } = useSectionInView("Home", {
     amount: 0.75,
   });
@@ -74,6 +77,10 @@ export default function Intro() {
       >
         <Link
           href="#contact"
+          onClick={() => {
+            changeActiveSection("Contact");
+            changeTimeOfLastClick(Date.now());
+          }}
           className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition group"
         >
           Let's Connect{" "}
@@ -81,7 +88,7 @@ export default function Intro() {
         </Link>
         <a
           href="/Parth-Tank-Resume.pdf"
-          className="bg-white text-gray-700 hover:text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer border border-black/10"
+          className="bg-white text-gray-700 hover:text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer borderBlack"
           download={true}
         >
           Download CV{" "}
@@ -90,14 +97,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/parthtank301/"
           target="_blank"
-          className="bg-white text-gray-700 hover:text-gray-950 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white text-gray-700 hover:text-gray-950 text-[1.2rem] p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
         >
           <FaLinkedinIn />
         </a>
         <a
           href="https://github.com/Parthtank21"
           target="_blank"
-          className="bg-white text-gray-700 hover:text-gray-950 text-[1.35rem] p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white text-gray-700 hover:text-gray-950 text-[1.35rem] p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
         >
           <FaGithub />
         </a>
