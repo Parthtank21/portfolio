@@ -41,25 +41,25 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:parthtank301@gmail.com" className="underline">
           parthtank301@gmail.com
         </a>{" "}
         or through this form.
       </p>
-      <form action={formAction} className="mt-10 flex flex-col">
+      <form action={formAction} className="mt-10 flex flex-col dark:text-black">
         <input
           type="email"
           name="senderEmail"
-          className="h-14 px-4 rounded-lg bg-white borderBlack"
+          className="h-14 px-4 rounded-lg bg-white borderBlack dark:bg-white/80 dark:focus:bg-white/100 transition-all dark:outline-none"
           placeholder="Your email"
           maxLength={70}
           required
         />
         <textarea
           name="senderMessage"
-          className="h-52 my-3 rounded-lg bg-white borderBlack p-4 resize-none"
+          className="h-52 my-3 rounded-lg bg-white borderBlack p-4 resize-none dark:bg-white/80 dark:focus:bg-white/100 transition-all dark:outline-none"
           placeholder="Your message"
           maxLength={1000}
           required

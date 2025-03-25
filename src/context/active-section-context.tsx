@@ -3,7 +3,7 @@
 import type { SectionName } from "@/lib/types";
 import React, { createContext, useContext, useState } from "react";
 
-type ActiveSectionContextProviderProps = {
+type ActiveSectionContextProps = {
   activeSection: SectionName;
   changeActiveSection: (section: SectionName) => void;
   timeOfLastClick: number;
@@ -11,7 +11,7 @@ type ActiveSectionContextProviderProps = {
 };
 
 const ActiveSectionContext =
-  createContext<ActiveSectionContextProviderProps | null>(null);
+  createContext<ActiveSectionContextProps | null>(null);
 
 export default function ActiveSectionContextProvider({
   children,
