@@ -30,13 +30,13 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src="https://media.licdn.com/dms/image/v2/D4D35AQEL5XnrPJYKdA/profile-framedphoto-shrink_400_400/B4DZWk_3PgHIAc-/0/1742229959951?e=1743872400&v=beta&t=GCywUdePl06FOfFPxJzeCQ1jB9CAhM3iACZm4ZOMtR8"
               height={192}
               width={192}
               quality={95}
               priority={true}
               alt="Parth Profile"
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-24 w-24 rounded-full border-[0.25rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -60,11 +60,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        Hello, I'm <span className="font-bold">Parth Tank</span>, a{" "}
+        <span className="font-bold">MERN stack developer</span> with{" "}
+        <span className="underline">two years</span> of experience. I specialize
+        in building websites and applications, always{" "}
+        <span className="italic">eager to learn new technologies</span>.
       </motion.h1>
 
       <motion.div

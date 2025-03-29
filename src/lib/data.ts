@@ -2,9 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "/public/corpcomment.png";
-import rmtdevImg from "/public/rmtdev.png";
-import wordanalyticsImg from "/public/wordanalytics.png";
+import miroImg from "/public/project-miro.png";
+import rmtdevImg from "/public/project-paritydeals.png";
 
 export const links = [
   {
@@ -35,52 +34,47 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "MERN Stack Developer",
+    location: "Green Apex, Ahmedabad",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "After completing my internship, I joined Green Apex Solutions, where I worked on legacy systems, client projects, and in-house initiatives. My role involved utilizing technologies such as ReactJS, NextJS, Strapi CMS, and NodeJS to develop and enhance applications.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Oct 2023 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "ReactJS Developer",
+    location: "Lucent Innovation, Ahmedabad",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "At Lucent Innovation, I had an incredible six-month internship where I got hands-on experience working on diverse projects. I explored exciting technologies like HTML Canvas, Wix, React, and Node.js, and even dived into product customization, sharpening my skills in real-world applications.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Feb 2023 - Aug 2023",
+  },
+  {
+    title: "Bachlors in Information Technology",
+    location: "Marwadi University, Rajkot",
+    description:
+      "I completed my Bachelor's in Information Technology from Marwadi University in 2023. During my studies, I explored various subjects, including Data Structures & Algorithms, Computer Networks, and Operating Systems.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Miro",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Miro clone - A collaborative, real-time whiteboard. Packed with features such as real-time database, whiteboard from scratch with ability to add shapes like Rectangles and Ellipses, Sticky notes and Pencil drawing.",
+    tags: ["React", "NextJS", "Clerk", "Convex", "LiveBlocks"],
+    imageUrl: miroImg,
+    link: "https://miro-clone-v1.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "Parity Deals",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I developed a personal project cloning the ParityDeals website, which offers location-based dynamic pricing to maximize sales across countries.",
+    tags: ["NextJS", "Clerk", "Tailwind", "ShadCN", "NeonDB", "Drizzle"],
     imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    link: "https://paritydeal.vercel.app/",
   },
 ] as const;
 
@@ -89,19 +83,16 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "Tailwind",
   "React",
+  "Redux",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
+  "Express",
   "MongoDB",
-  "Redux",
+  "PostgreSQL",
   "GraphQL",
   "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Git",
+  "Strapi CMS",
 ] as const;
