@@ -50,7 +50,7 @@ export const experiencesData = [
     date: "Feb 2023 - Aug 2023",
   },
   {
-    title: "Bachlors in Information Technology",
+    title: "Bachelor's in Information Technology",
     location: "Marwadi University, Rajkot",
     description:
       "I completed my Bachelor's in Information Technology from Marwadi University in 2023. During my studies, I explored various subjects, including Data Structures & Algorithms, Computer Networks, and Operating Systems.",
