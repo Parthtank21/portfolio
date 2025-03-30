@@ -14,7 +14,7 @@ import { useThemeContext } from "@/context/theme-context";
 export default function Experience() {
   const { theme } = useThemeContext();
   const { ref } = useSectionInView("Experience", {
-    amount: 0.75,
+    amount: 0.50,
   });
 
   return (

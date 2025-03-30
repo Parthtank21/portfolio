@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", {
-    amount: 0.4,
+    amount: 0.50,
   });
 
   return (
