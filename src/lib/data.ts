@@ -35,11 +35,19 @@ export const links = [
 export const experiencesData = [
   {
     title: "MERN Stack Developer",
-    location: "Green Apex, Ahmedabad",
+    location: "Latitude Technolabs, Ahmedabad",
+    description:
+      "I have recently joined Latitude Technolabs. At Latitude, I am working as a MERN stack devleoper. My role involved utilizing technologies such as ReactJS, NextJS, Redux, and NodeJS to develop and enhance applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Apr 2025 - Present",
+  },
+  {
+    title: "MERN Stack Developer",
+    location: "Green Apex Solutions, Ahmedabad",
     description:
       "After completing my internship, I joined Green Apex Solutions, where I worked on legacy systems, client projects, and in-house initiatives. My role involved utilizing technologies such as ReactJS, NextJS, Strapi CMS, and NodeJS to develop and enhance applications.",
     icon: React.createElement(CgWorkAlt),
-    date: "Oct 2023 - Present",
+    date: "Oct 2023 - Apr 2025",
   },
   {
     title: "ReactJS Developer",
