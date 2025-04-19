@@ -30,7 +30,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/v2/D4D35AQEL5XnrPJYKdA/profile-framedphoto-shrink_400_400/B4DZWk_3PgHIAc-/0/1742229959951?e=1743872400&v=beta&t=GCywUdePl06FOfFPxJzeCQ1jB9CAhM3iACZm4ZOMtR8"
+              src="https://avatars.githubusercontent.com/u/107384784"
               height={192}
               width={192}
               quality={95}
